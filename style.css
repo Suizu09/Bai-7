@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    box-sizing: border-box;
 }
 
 * {
@@ -9,9 +10,10 @@
 .Home {
     width: 100%;
     height: 8356px;
-    background-color: #ffffff;
+    background-color:#ffffff;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -148,7 +150,7 @@
     height: 48px;
     display: flex;
     justify-content: center;
-    gap: 95.91px;
+    gap: 96px;
 }
 
 .Logotypes img {
@@ -156,7 +158,7 @@
 }
 
 .services {
-    width: 100%;
+    width: 1241px;
     height: 51px;
     display: flex;
     gap: 40px;
@@ -681,7 +683,7 @@
 }
 
 .Casestudies {
-    width: 100%;
+    width: 1241px;
     height: 51px;
     display: flex;
     gap: 40px;
@@ -850,10 +852,10 @@
 }
 
 .Our {
-    width: 100%;
+    width: 1241px;
     height: 51px;
     display: flex;
-    gap: 40px;
+    gap: 40px;  
     margin-top: 140px;
 }
 
@@ -1006,7 +1008,7 @@
 }
 
 .Team {
-    width: 100%;
+    width: 1241px;
     height: 51px;
     display: flex;
     gap: 40px;
@@ -1452,7 +1454,7 @@
 }
 
 .Test {
-    width: 100%;
+    width: 1241px;
     height: 51px;
     display: flex;
     gap: 40px;
@@ -1498,26 +1500,30 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
     gap: 124px;
 }
 
 .testtop {
     width: 1918px;
     height: 335px;
-    background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
 .testbottom {
     width: 564px;
     height: 14px;
-    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 189px;
 }
 
 .Contact {
-    width: 100%;
+    width: 1241px;
     height: 51px;
     display: flex;
     gap: 40px;
@@ -1553,8 +1559,484 @@
     line-height: 100%;
 }
 
-body {
-  background: #191a23;
-  font-family: "Space Grotesk", sans-serif;
-  padding: 40px;
+.testtopmain {
+    width: 606px;
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.testtopmain1 {
+    width: 606px;
+    height: 266px;
+    border: solid 1px #b9ff66;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.testtopmain1::after {
+    content: "";
+    position: absolute;
+    left: 60px;                 
+    bottom: -21px;
+    width: 40px;
+    height: 40px;
+    background: #191a23;       
+    border-right: 1px solid #b9ff66;
+    border-bottom: 1px solid #b9ff66;
+    transform: rotate(45deg);
+}
+
+.testtopmain1 p {
+    width: 502px;
+    height: 138px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.testtopmain2 {
+    width: 526px;
+    height: 49px;
+}
+
+.testtopmain2 h4 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    color: #b9ff66;
+}
+
+.testtopmain2 p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #ffffff
+}
+
+.Contactblock {
+    width: 100%;
+    height: 773px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.contactblockround {
+    width: 1240px;
+    height: 773px;
+    background-color: #f3f3f3;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    gap: 217px; 
+}
+
+.contactillus {
+    position: absolute;
+    top: 50%;
+    left: 900px;
+    transform: translateY(-50%);
+}
+
+.contactleft {
+    width: 556px;
+    height: 633px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-shrink: 0; 
+    margin-right: 429px;    
+}
+
+.contact1 {
+    width: 276px;
+    height: 28px;
+    display: flex;
+    gap: 35px;
+}
+
+.contact1left {
+    width: 96px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.contact1right {
+    width: 145px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.contact2 {
+    width: 556px;
+    height: 457px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.name {
+    width: 556px;
+    height: 92px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.name p {
+    width: 44px;
+    height: 28px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.contact2 .namebutton {
+    width: 556px;
+    height: 59px;
+    border: solid 1px #000000;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 14px;
+}
+
+.namebutton p {
+    width: 49px;
+    height: 23px;
+    color: #898989;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    padding-left: 30px;
+}
+
+.email {
+    width: 556px;
+    height: 92px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.email p {
+    width: 44px;
+    height: 28px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact2 .Emailbutton {
+    width: 556px;
+    height: 59px;
+    border: solid 1px #000000;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 14px;
+}
+
+.Emailbutton p {
+    width: 49px;
+    height: 23px;
+    color: #898989;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    padding-left: 30px;
+}
+
+.Message {
+    width: 556px;
+    height: 92px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.Message p {
+    width: 78px;
+    height: 28px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact2 .Mesbutton {
+    width: 556px;
+    height: 190px;
+    border: solid 1px #000000;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 14px;
+}
+
+.Mesbutton p {
+    width: 78px;
+    height: 23px;
+    color: #898989;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    padding-top: 18px;
+    padding-left: 30px;
+    padding-bottom: 149px;
+}
+
+.Sendmes {
+    width: 556px;
+    height: 68px;
+    background-color: #191a23;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Sendmes p {
+    width: 141px;
+    height: 28px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.footer {
+    width: 100%;
+    height: 514px;
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+}
+
+.footertable {
+    width: 1241px;
+    height: 514px;
+    border-radius: 30px 30px 0 0;
+    background-color: #191a23;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.footheader {
+    width: 1121px;
+    height: 30px;
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 155px;
+}
+
+.footbody {
+    width: 1121px;
+    height: 185px;
+    margin-top: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footfoot {
+    width: 1120px;
+    height: 78px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footlogo {
+    width: 180px;
+    height: 29px;
+    display: flex;
+    gap: 11px;
+}
+
+.footlogo h1 {
+    width: 170.62px;
+    height: 28.56px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.footnav {
+    width: 501px;
+    height: 23px;
+    display: flex;
+    gap: 40px;
+}
+
+.footnav p {
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.footcompany {
+    width: 130px;
+    height: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.footbodyleft {
+    width: 332px;
+    height: 185px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.footbodyright {
+    width: 634px;
+    height: 184px;
+    background-color: #292a32;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footunderbutton {
+    width: 332px;
+    height: 132px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #ffffff
+}
+
+.footunderbutton p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.footbutton {
+    width: 126px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b9ff66;
+    border-radius: 7px;
+}
+
+.footbutton h4 {
+    width: 112px;
+    height: 26px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Emaill {
+    width: 285px;
+    height: 67px;
+    border: solid 1px #ffffff;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+}
+
+.Emaill p {
+    width: 45px;
+    height: 23px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Sub {
+    width: 249px;
+    height: 68px;
+    border-radius: 14px;
+    background-color: #b9ff66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Sub p {
+    width: 179px;
+    height: 28px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.hrfoot {
+    width: 1120px;
+    height: 0;
+    background-color: #ffffff;
+}
+
+.footfootend {
+    width: 485px;
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footfootend .tus {
+    width: 324px;
+    height: 28px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+}
+
+.footfootend .Pri {
+    width: 121px;
+    height: 28px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+    text-decoration: underline;
 }
